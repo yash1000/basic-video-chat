@@ -76,4 +76,7 @@ export class VchatComponent implements OnInit {
   message() {
     this.peer.send('Hello world');
   }
+  closeconneciton(){
+    this.peer.destroy();
+  }
 }
